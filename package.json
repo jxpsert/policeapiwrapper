@@ -1,0 +1,30 @@
+{
+  "name": "police-api-wrapper",
+  "version": "1.0.0",
+  "description": "UK Police API wrapper",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxpsert/policeapiwrapper.git"
+  },
+  "keywords": [
+    "police",
+    "uk",
+    "api",
+    "data.police.uk",
+    "british"
+  ],
+  "author": "Jxpsert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jxpsert/policeapiwrapper/issues"
+  },
+  "homepage": "https://github.com/jxpsert/policeapiwrapper#readme"
+}
