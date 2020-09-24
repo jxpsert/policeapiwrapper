@@ -1,8 +1,7 @@
 const Collection = require('@discordjs/collection');
 const Base = require('../index.js');
-const NeighbourhoodsManager = require('./NeighbourhoodsManager.js');
 
-class Neighbourhood {
+class Neighbourhood { // also quite boring
 
   constructor(data){
     this.id = data.id;

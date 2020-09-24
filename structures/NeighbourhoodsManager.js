@@ -3,7 +3,7 @@ const Collection = require('@discordjs/collection');
 const Neighbourhood = require('./Neighbourhood.js');
 const Officer = require('./Officer.js');
 
-class NeighbourhoodsManager {
+class NeighbourhoodsManager { // manages neighbourhoods in a Force - <Force>.neighbourhoods
     constructor (force){
         this.cache = new Collection();
         this.force = force;

@@ -1,4 +1,4 @@
-class Officer {
+class Officer { // most boring class in the project, holy fuck
     constructor(data){
         this.name = data.name;
         this.rank = data.rank;

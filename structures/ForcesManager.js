@@ -2,10 +2,8 @@ const Fetch = require('node-fetch');
 const Collection = require('@discordjs/collection');
 const Force = require('./Force.js');
 const Officer = require('./Officer.js');
-const Neighbourhood = require('./Neighbourhood.js');
-const NeighbourhoodsManager = require('./NeighbourhoodsManager.js');
 
-class ForcesManager {
+class ForcesManager { // manages forces in a Client - <Client>.forces
     constructor (){
         this.cache = new Collection();
     }
