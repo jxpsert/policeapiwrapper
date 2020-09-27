@@ -10,6 +10,8 @@ class NeighbourhoodsManager { // manages neighbourhoods in a Force - <Force>.nei
     }
 
     async fetch(id){
+        try {
+            if (!this.cache.get(id)) {
         let neighbourhood = await Fetch(`https://data.police.uk/api/${this.force.id}/${id}`);
         let neighbourhoodJSON = await neighbourhood.json();
 
@@ -39,6 +41,12 @@ class NeighbourhoodsManager { // manages neighbourhoods in a Force - <Force>.nei
         this.cache.set(id, nb);
 
         return nb;
+    }else {
+        return this.cache.get(id);
+    }
+    } catch (err) {
+        console.error(err);
+    }
     }   
 }
 module.exports = NeighbourhoodsManager;
