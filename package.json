@@ -4,7 +4,6 @@
   "description": "UK Police API wrapper",
   "main": "index.js",
   "dependencies": {
-    "convert": "^1.0.1",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
